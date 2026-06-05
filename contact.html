@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Job Portal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Job Portal</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+        <button id="themeToggle" class="theme-toggle">Dark Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <section class="contact-card">
+      <h1>Contact Us</h1>
+      <p>If you have questions about the job portal, send a message and we'll save it locally.</p>
+      <form id="contactForm">
+        <label for="contactName">Name</label>
+        <input id="contactName" type="text" required placeholder="Your name" />
+
+        <label for="contactEmail">Email</label>
+        <input id="contactEmail" type="email" required placeholder="you@example.com" />
+
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" rows="5" required placeholder="Your message"></textarea>
+
+        <button class="button primary" type="submit">Send Message</button>
+      </form>
+      <p class="form-note">Messages are stored in your browser's local storage for demo purposes.</p>
+      <div id="contactFeedback" class="feedback"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Job Portal Website. Contact submissions are demo-only and stored locally.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

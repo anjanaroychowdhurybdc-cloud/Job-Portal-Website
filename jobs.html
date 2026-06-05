@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jobs | Job Portal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Job Portal</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="jobs.html" class="active">Jobs</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <button id="themeToggle" class="theme-toggle">Dark Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-panel">
+      <div class="search-row">
+        <div class="search-field">
+          <label for="jobSearch">Search jobs</label>
+          <input id="jobSearch" type="search" placeholder="Search by title, company, or location" />
+        </div>
+        <div class="search-field">
+          <label for="categoryFilter">Filter by category</label>
+          <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Design">Design</option>
+            <option value="Development">Development</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Support">Support</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="jobs-list" id="jobsList">
+      <!-- Job cards rendered by JavaScript -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Job Portal Website. All jobs are sample listings for demo purposes.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
